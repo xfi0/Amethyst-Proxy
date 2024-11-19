@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+.grad{
+  min-height: 100%;
+  min-width : 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, purple);
+  z-index: -100000000000;
+}
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.header-center {
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.left-margin {
+  margin: 0px 16px;
+}
+
+#uv-frame {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+}
+
+#uv-error {
+  color: #ff6666 !important;
+  white-space: pre-wrap;
+}
+
+#uv-error-code {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#uv-register-sw {
+  color: white;
+  background: #555555;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 20px;
+  line-height: 16px;
+  display: none;
+}
+
+#uv-register-sw:active {
+  background: #333333;
+}
+
+#uv-register-sw.show {
+  display: block;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.logo-wrapper .text {
+  font-size: 75px;
+  color: #fff;
+}
+
+.logo-wrapper h1 {
+  color: white;
+}
+
+footer {
+  margin: 0 5vw;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+footer > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+footer a,
+footer span {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.desc p {
+  text-align: center;
+  align-items: center;
+  width: 560px;
+  color: rgba(253, 253, 253, 0.514);
+}
+
+#uv-address {
+  background: none;
+  font-family: inherit;
+  padding: 0px 17px;
+  height: 48px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  color: var(--text-color);
+  border-radius: 3px;
+  outline: none;
+  width: 350px;
+  margin-top: 5px;
+  border-radius: 50px;
+  color: #fff;
+  transition: border-radius 0.1s;
+}
+
+#uv-address:focus {
+  border: 1px solid rgba(253, 253, 253, 0.514);
+  border-radius: 6px;
+}
+
+.credit {
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  border: #fff 1px solid;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.credit label {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.credit a,
+.credit label {
+  color: white;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.credit pre {
+  display: none;
+  width: 100%;
+}
+
+.credit label::after {
+  content: "show license";
+  cursor: pointer;
+}
+
+.credit input:checked + label::after {
+  content: "hide license";
+}
+
+.credit input:checked ~ pre {
+  display: block;
+}
+.navbar{
+  top: 0;
+   left: 0;
+   right: 0;
+   height: 10%;
+   padding: 0 25px;
+   box-sizing: border-box;
+   background-color: var(--background-nav);
+   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+   -webkit-backdrop-filter: var(--backdrop-filter);
+   backdrop-filter: var(--backdrop-filter);
+   transition: 0.35s ease;
+   border-radius: 15px;
+   width: fill;
+   margin: 15px;
+   z-index: 100;
+   position: fixed;
+}
+.lf{
+  width: 5%;
+}
+.nav-right{
+  width: 5%;
+  float: right;
+}
+
+:root{
+    /* Background Variables */
+    --backdrop-filter: blur(10px) brightness(80%); /* Nav Backdrop filter */
+    --background-nav: rgba(255, 255, 255, 0.02); /* Nav Background */
+    --background-color: #222; /* Main Background Color */
+    --background-input: #4545459e; /* Input Field Background Color */
+    --background-column: #353535; /* Background for Apps Container */
+    --background-settings: #2a2a2a; /* Settings Card Background */
+    --background-buttons: #333; /* Button Background Color */
+    --tab-active-background: #444; /* Accent Color for Tabs */
+    --tab-inactive-background: ; /* Background Color for Tabs Not In Use */
+    --slider-active-background: #4caf50; /* Active Slider Background Color */
+    --slider-inactive-background: #ccc; /*  Slider Background Color */
+    --text-primary: #fff; /* Primary Text Color */
+    --text-dark: #555; /* Dark Text Color for Error Page, Scrollbar, and Particles */
+    --text-placeholder: #aaa; /* Placeholder Text Color */
+    --save-button: #4caf50; /* Save Button, Typically Green */
+    --reset-button: #f44336; /* Reset Button, Typically Red */
+    --import-button: #009688; /* Import Button, Typically Teal */
+    --export-button: #ea76cb; /* Export Button, Typically Pink */
+}
