@@ -137,12 +137,12 @@ footer a:hover {
   background: none;
   font-family: inherit;
   padding: 0px 17px;
-  height: 48px;
+  height: 55px;
   border: 1px solid rgb(255, 255, 255, 0.2);
   color: var(--text-color);
   border-radius: 3px;
   outline: none;
-  width: 350px;
+  width: 500px;
   margin-top: 5px;
   border-radius: 50px;
   color: #fff;
@@ -215,9 +215,19 @@ footer a:hover {
 .lf{
   width: 5%;
 }
-.nav-right{
-  width: 5%;
+.nav-right {
+  margin-top: 10px;
+  width: fit-content;
   float: right;
+  display: flex; /* Use flexbox to align items inline */
+  align-items: center; /* Center items vertically */
+}
+
+.nav-right img {
+  width: auto; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  margin-left: 20px; /* Add some spacing between images */
+  display: inline-block; /* Ensure images are inline */
 }
 
 :root{
@@ -239,5 +249,5 @@ footer a:hover {
     --save-button: #4caf50; /* Save Button, Typically Green */
     --reset-button: #f44336; /* Reset Button, Typically Red */
     --import-button: #009688; /* Import Button, Typically Teal */
-    --export-button: #ea76cb; /* Export Button, Typically Pink */
+    --export-button: #ea76cb; /* Export Buton, Typically Pink */
 }

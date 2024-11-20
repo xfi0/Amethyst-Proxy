@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function() {
+	const splashTexts = [
+	"https://github.com/xfi0/",
+ 	"made by dominic the worst coder",
+ 	"thanks for using my site",
+  	"i <3 VsCode",
+	"amethyst removes internet censorship",
+	"recomend me to your friends",
+	"unlock blocked content with amethyst"
+	];
+
+	const splashParagraph = document.querySelector('.splash');
+
+	function changeSplashText() {
+		const randomIndex = Math.floor(Math.random() * splashTexts.length);
+		splashParagraph.textContent = splashTexts[randomIndex];
+	}
+
+	// Initial text set
+	changeSplashText();
+
+	// Change text on click
+	splashParagraph.addEventListener('click', changeSplashText);
+});
 "use strict";
 /**
  * @type {HTMLFormElement}
