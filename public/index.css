@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
-
+html,body {
+  height: 100%;
+  margin: 0;
+}
 .grad{
   min-height: 100%;
   min-width : 100%;
   height: auto;
   width: auto;
   position: absolute;
-  background-color: black; /* For browsers that do not support gradients */
-  background-image: linear-gradient(black, purple);
+  background-color: #ad00ff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, #ad00ff);
   z-index: -100000000000;
 }
 body {
@@ -17,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #ad00ff; /* For browsers that do not support gradients */
 }
 
 .fa-magnifying-glass {
@@ -250,4 +254,64 @@ footer a:hover {
     --reset-button: #f44336; /* Reset Button, Typically Red */
     --import-button: #009688; /* Import Button, Typically Teal */
     --export-button: #ea76cb; /* Export Buton, Typically Pink */
+}
+.Games-Container{ 
+  width: 100%;
+  padding-top: 20%;
+  position: absolute;
+    display: flex;
+    margin-top: 15%;
+    gap: 60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Games-Container img {
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .icon:hover{
+    scale: 1.1;
+    transition: 0.75s;
+    cursor: pointer;
+  }
+  .gname{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    
+  }
+  .gname:hover{
+    transform: scale(1.03);
+  }
+  footer {
+    margin-top: auto;
+    padding: 10px; /* Optional: Add some padding */
+    text-align: center; /* Center the text */
+    color: #fff; /* Ensure text is visible */
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the links */
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
